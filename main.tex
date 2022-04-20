@@ -1,0 +1,56 @@
+%\documentclass{cumcmthesis}
+\documentclass[withoutpreface,bwprint]{cumcmthesis} %去掉封面与编号页，电子版提交的时候使用。
+
+
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{url}   % 网页链接
+\usepackage{subcaption} % 子标题
+
+\title{数学建模比赛标题}
+
+%承诺书个人信息：
+\tihao{A}
+\baominghao{4321}
+\schoolname{西安电子科技大学大学}
+\membera{ }
+\memberb{ }
+\memberc{ }
+\supervisor{ }
+\yearinput{2022}
+\monthinput{05}
+\dayinput{3}
+%%%%
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\input{contents/abstract.tex}
+
+%\newpage
+
+\end{abstract}
+
+%目录  2019 明确不要目录，我觉得这个规定太好了
+
+%目录：
+\tableofcontents
+
+
+%正文：
+
+\input{contents/section1.tex}
+\input{contents/section2.tex}
+\input{contents/section3.tex}
+\input{contents/section4.tex}
+\input{contents/section5.tex}
+\section{test}
+\input{contents/bibliography.tex}
+
+\newpage
+
+\input{contents/appendices.tex}
+
+\end{document} 
