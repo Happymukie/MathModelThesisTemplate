@@ -71,8 +71,8 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 % 插入链接
 \RequirePackage{url}
 % 绘图的包
-%\RequirePackage{tikz}
-%\usetikzlibrary{snakes}
+\RequirePackage{tikz}
+\usetikzlibrary{positioning}
 
 % 字图与子标题
 \RequirePackage{subcaption}
@@ -83,7 +83,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \setlength{\cftbeforesecskip}{7pt}
 \setlength{\cftbeforesubsecskip}{3pt}
 %\setlength{\cftbeforesubsecskip}{5pt}
-\renewcommand{\cftsecfont}{\bfseries\zihao{-4}}
+\renewcommand{\cftsecfont}{\bfseries\zihao{-4}\songti}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
 \renewcommand{\cftsecaftersnumb}{\hskip.4em}
 
@@ -349,7 +349,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
   {\zihao{4}\noindent\mcm@commit@string@headname\\[-8pt]
   \noindent\rule[5pt]{\textwidth-1.34em}{.5pt}\par}
   \begin{center}%
-    {\zihao{-3}\bfseries \mcm@commit@string@titlea \par}%
+    {\zihao{-3}\bfseries\heiti \mcm@commit@string@titlea \par}%
     {\vskip1ex\zihao{3}\bfseries\songti \mcm@commit@string@titleb \par}
   \end{center}
     {\zihao{-4} \mcm@commit@string@contents \par}
@@ -404,7 +404,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 
 \noindent\rule{\textwidth}{1pt}\par}
 \begin{center}
-{\zihao{4}\bfseries \mcm@numberpage@string@titlea\par}
+{\zihao{4}\bfseries\heiti \mcm@numberpage@string@titlea\par}
 {\vskip1ex\zihao{3}\songti \bfseries\mcm@numberpage@string@titleb\par}
 \end{center}\par
 {%
@@ -442,7 +442,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \vskip1ex
 \else
 \setcounter{page}{1}
-{\centering \zihao{3}\bfseries \@title\par}
+{\centering \zihao{3}\heiti \@title\par}
 \vskip1ex
 \fi
 }
@@ -469,23 +469,23 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \renewcommand\section{\@startsection{section}{1}{\z@}%
  	{-3.5ex \@plus -1ex \@minus -.2ex}%
 	{2.3ex \@plus.2ex}%
-	{\centering\normalfont\Large\bfseries}}
+	{\centering\normalfont\zihao{4}\heiti}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
 	{-3.25ex\@plus -1ex \@minus -.2ex}%
 	{1.5ex \@plus .2ex}%
-	{\normalfont\large\bfseries}}
+	{\normalfont\zihao{-4}\heiti}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
 	{-3.25ex\@plus -1ex \@minus -.2ex}%
 	{1.5ex \@plus .2ex}%
-	{\normalfont\normalsize\bfseries}}
+	{\normalfont\zihao{-4}\heiti}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
 	{3.25ex \@plus1ex \@minus.2ex}%
 	{-1em}%
-	{\normalfont\normalsize\bfseries}}
+	{\normalfont\normalsize}}
 \renewcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
 	 {3.25ex \@plus1ex \@minus .2ex}%
 	 {-1em}%
-	 {\normalfont\normalsize\bfseries}}
+	 {\normalfont\normalsize}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Define new environment and command
@@ -496,11 +496,11 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 		\section*{\abstractname}%
 	\else
 	 \begin{center}%
-	{\zihao{4}\bfseries \abstractname\vspace{-.5em}\vspace{\z@}}%
+	{\zihao{4}\heiti \abstractname\vspace{-.5em}\vspace{\z@}}%
 	 \end{center}%
  	 \quotation
 	\fi}
-	{\if@twocolumn\else\endquotation\null\fi}
+	{\if@twocolumn\else\endquotation\newpage\null\fi}
 \renewenvironment{quotation}
 	{\list{}{\listparindent 2em%
 	 \itemindent \listparindent
@@ -514,7 +514,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	\renewcommand{\mcm@tokens@keywords}{#1}
 	\par
 	\vskip1ex
-	{\noindent\zihao{-4}\mcm@cap@keywordsname：}~{\mcm@tokens@keywords}
+	{\noindent\zihao{-4}\songti\mcm@cap@keywordsname：}~{\mcm@tokens@keywords}
 	}
 % 定义附录
 
