@@ -1,12 +1,12 @@
-\contentsline {section}{\numberline {一、}问题的提出}{2}{section.1}%
-\contentsline {subsection}{\numberline {1\,.\,1}背景}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1\,.\,2}重述}{2}{subsection.1.2}%
-\contentsline {section}{\numberline {二、}基本假设}{2}{section.2}%
-\contentsline {section}{\numberline {三、}符号说明}{2}{section.3}%
-\contentsline {section}{\numberline {四、}问题的分析}{2}{section.4}%
-\contentsline {section}{\numberline {五、}模型建立与求解}{2}{section.5}%
-\contentsline {section}{\numberline {六、}test}{2}{section.6}%
-\contentsline {section}{参考文献}{2}{section*.5}%
-\contentsline {section}{附录 \numberline {A}sth}{3}{appendix.a.A}%
-\contentsline {section}{附录 \numberline {B}Source matlab}{3}{appendix.a.B}%
-\contentsline {section}{附录 \numberline {C}Source C}{3}{appendix.a.C}%
+\contentsline {section}{\numberline {一、}问题的提出}{3}{section.1}%
+\contentsline {subsection}{\numberline {1\,.\,1}背景}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1\,.\,2}重述}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {二、}基本假设}{3}{section.2}%
+\contentsline {section}{\numberline {三、}符号说明}{3}{section.3}%
+\contentsline {section}{\numberline {四、}问题的分析}{3}{section.4}%
+\contentsline {section}{\numberline {五、}模型建立与求解}{3}{section.5}%
+\contentsline {section}{\numberline {六、}test}{3}{section.6}%
+\contentsline {section}{参考文献}{3}{section*.5}%
+\contentsline {section}{附录 \numberline {A}sth}{4}{appendix.a.A}%
+\contentsline {section}{附录 \numberline {B}Source matlab}{4}{appendix.a.B}%
+\contentsline {section}{附录 \numberline {C}Source C}{4}{appendix.a.C}%
